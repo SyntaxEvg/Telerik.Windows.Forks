@@ -1,0 +1,160 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Windows.Media;
+
+namespace Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.Xlsx.Model.Types
+{
+	static class PresetColors
+	{
+		static PresetColors()
+		{
+			PresetColors.RegisterPresetColor("aliceBlue", Color.FromArgb(byte.MaxValue, 240, 248, byte.MaxValue));
+			PresetColors.RegisterPresetColor("antiqueWhite", Color.FromArgb(byte.MaxValue, 250, 235, 215));
+			PresetColors.RegisterPresetColor("aqua", Color.FromArgb(byte.MaxValue, 0, byte.MaxValue, byte.MaxValue));
+			PresetColors.RegisterPresetColor("aquamarine", Color.FromArgb(byte.MaxValue, 127, byte.MaxValue, 212));
+			PresetColors.RegisterPresetColor("azure", Color.FromArgb(byte.MaxValue, 240, byte.MaxValue, byte.MaxValue));
+			PresetColors.RegisterPresetColor("beige", Color.FromArgb(byte.MaxValue, 245, 245, 220));
+			PresetColors.RegisterPresetColor("bisque", Color.FromArgb(byte.MaxValue, byte.MaxValue, 228, 196));
+			PresetColors.RegisterPresetColor("black", Color.FromArgb(byte.MaxValue, 0, 0, 0));
+			PresetColors.RegisterPresetColor("blanchedAlmond", Color.FromArgb(byte.MaxValue, byte.MaxValue, 235, 205));
+			PresetColors.RegisterPresetColor("blue", Color.FromArgb(byte.MaxValue, 0, 0, byte.MaxValue));
+			PresetColors.RegisterPresetColor("blueViolet", Color.FromArgb(byte.MaxValue, 138, 43, 226));
+			PresetColors.RegisterPresetColor("brown", Color.FromArgb(byte.MaxValue, 165, 42, 42));
+			PresetColors.RegisterPresetColor("burlyWood", Color.FromArgb(byte.MaxValue, 222, 184, 135));
+			PresetColors.RegisterPresetColor("cadetBlue", Color.FromArgb(byte.MaxValue, 95, 158, 160));
+			PresetColors.RegisterPresetColor("chartreuse", Color.FromArgb(byte.MaxValue, 127, byte.MaxValue, 0));
+			PresetColors.RegisterPresetColor("chocolate", Color.FromArgb(byte.MaxValue, 210, 105, 30));
+			PresetColors.RegisterPresetColor("coral", Color.FromArgb(byte.MaxValue, byte.MaxValue, 127, 80));
+			PresetColors.RegisterPresetColor("cornflowerBlue", Color.FromArgb(byte.MaxValue, 100, 149, 237));
+			PresetColors.RegisterPresetColor("cornsilk", Color.FromArgb(byte.MaxValue, byte.MaxValue, 248, 220));
+			PresetColors.RegisterPresetColor("crimson", Color.FromArgb(byte.MaxValue, 220, 20, 60));
+			PresetColors.RegisterPresetColor("cyan", Color.FromArgb(byte.MaxValue, 0, byte.MaxValue, byte.MaxValue));
+			PresetColors.RegisterPresetColor("deepPink", Color.FromArgb(byte.MaxValue, byte.MaxValue, 20, 147));
+			PresetColors.RegisterPresetColor("deepSkyBlue", Color.FromArgb(byte.MaxValue, 0, 191, byte.MaxValue));
+			PresetColors.RegisterPresetColor("dimGray", Color.FromArgb(byte.MaxValue, 105, 105, 105));
+			PresetColors.RegisterPresetColor("dkBlue", Color.FromArgb(byte.MaxValue, 0, 0, 139));
+			PresetColors.RegisterPresetColor("dkCyan", Color.FromArgb(byte.MaxValue, 0, 139, 139));
+			PresetColors.RegisterPresetColor("dkGoldenrod", Color.FromArgb(byte.MaxValue, 184, 134, 11));
+			PresetColors.RegisterPresetColor("dkGray", Color.FromArgb(byte.MaxValue, 169, 169, 169));
+			PresetColors.RegisterPresetColor("dkGreen", Color.FromArgb(byte.MaxValue, 0, 100, 0));
+			PresetColors.RegisterPresetColor("dkKhaki", Color.FromArgb(byte.MaxValue, 189, 183, 107));
+			PresetColors.RegisterPresetColor("dkMagenta", Color.FromArgb(byte.MaxValue, 139, 0, 139));
+			PresetColors.RegisterPresetColor("dkOliveGreen", Color.FromArgb(byte.MaxValue, 85, 107, 47));
+			PresetColors.RegisterPresetColor("dkOrange", Color.FromArgb(byte.MaxValue, byte.MaxValue, 140, 0));
+			PresetColors.RegisterPresetColor("dkOrchid", Color.FromArgb(byte.MaxValue, 153, 50, 204));
+			PresetColors.RegisterPresetColor("dkRed", Color.FromArgb(byte.MaxValue, 139, 0, 0));
+			PresetColors.RegisterPresetColor("dkSalmon", Color.FromArgb(byte.MaxValue, 233, 150, 122));
+			PresetColors.RegisterPresetColor("dkSeaGreen", Color.FromArgb(byte.MaxValue, 143, 188, 139));
+			PresetColors.RegisterPresetColor("dkSlateBlue", Color.FromArgb(byte.MaxValue, 72, 61, 139));
+			PresetColors.RegisterPresetColor("dkSlateGray", Color.FromArgb(byte.MaxValue, 47, 79, 79));
+			PresetColors.RegisterPresetColor("dkTurquoise", Color.FromArgb(byte.MaxValue, 0, 206, 209));
+			PresetColors.RegisterPresetColor("dkViolet", Color.FromArgb(byte.MaxValue, 148, 0, 211));
+			PresetColors.RegisterPresetColor("dodgerBlue", Color.FromArgb(byte.MaxValue, 30, 144, byte.MaxValue));
+			PresetColors.RegisterPresetColor("firebrick", Color.FromArgb(byte.MaxValue, 178, 34, 34));
+			PresetColors.RegisterPresetColor("floralWhite", Color.FromArgb(byte.MaxValue, byte.MaxValue, 250, 240));
+			PresetColors.RegisterPresetColor("forestGreen", Color.FromArgb(byte.MaxValue, 34, 139, 34));
+			PresetColors.RegisterPresetColor("fuchsia", Color.FromArgb(byte.MaxValue, byte.MaxValue, 0, byte.MaxValue));
+			PresetColors.RegisterPresetColor("gainsboro", Color.FromArgb(byte.MaxValue, 220, 220, 220));
+			PresetColors.RegisterPresetColor("ghostWhite", Color.FromArgb(byte.MaxValue, 248, 248, byte.MaxValue));
+			PresetColors.RegisterPresetColor("gold", Color.FromArgb(byte.MaxValue, byte.MaxValue, 215, 0));
+			PresetColors.RegisterPresetColor("goldenrod", Color.FromArgb(byte.MaxValue, 218, 165, 32));
+			PresetColors.RegisterPresetColor("gray", Color.FromArgb(byte.MaxValue, 128, 128, 128));
+			PresetColors.RegisterPresetColor("green", Color.FromArgb(byte.MaxValue, 0, 128, 0));
+			PresetColors.RegisterPresetColor("greenYellow", Color.FromArgb(byte.MaxValue, 173, byte.MaxValue, 47));
+			PresetColors.RegisterPresetColor("honeydew", Color.FromArgb(byte.MaxValue, 240, byte.MaxValue, 240));
+			PresetColors.RegisterPresetColor("hotPink", Color.FromArgb(byte.MaxValue, byte.MaxValue, 105, 180));
+			PresetColors.RegisterPresetColor("indianRed", Color.FromArgb(byte.MaxValue, 205, 92, 92));
+			PresetColors.RegisterPresetColor("indigo", Color.FromArgb(byte.MaxValue, 75, 0, 130));
+			PresetColors.RegisterPresetColor("ivory", Color.FromArgb(byte.MaxValue, byte.MaxValue, byte.MaxValue, 240));
+			PresetColors.RegisterPresetColor("khaki", Color.FromArgb(byte.MaxValue, 240, 230, 140));
+			PresetColors.RegisterPresetColor("lavender", Color.FromArgb(byte.MaxValue, 230, 230, 250));
+			PresetColors.RegisterPresetColor("lavenderBlush", Color.FromArgb(byte.MaxValue, byte.MaxValue, 240, 245));
+			PresetColors.RegisterPresetColor("lawnGreen", Color.FromArgb(byte.MaxValue, 124, 252, 0));
+			PresetColors.RegisterPresetColor("lemonChiffon", Color.FromArgb(byte.MaxValue, byte.MaxValue, 250, 205));
+			PresetColors.RegisterPresetColor("lime", Color.FromArgb(byte.MaxValue, 0, byte.MaxValue, 0));
+			PresetColors.RegisterPresetColor("limeGreen", Color.FromArgb(byte.MaxValue, 50, 205, 50));
+			PresetColors.RegisterPresetColor("linen", Color.FromArgb(byte.MaxValue, 250, 240, 230));
+			PresetColors.RegisterPresetColor("ltBlue", Color.FromArgb(byte.MaxValue, 173, 216, 230));
+			PresetColors.RegisterPresetColor("ltCoral", Color.FromArgb(byte.MaxValue, 240, 128, 128));
+			PresetColors.RegisterPresetColor("ltCyan", Color.FromArgb(byte.MaxValue, 224, byte.MaxValue, byte.MaxValue));
+			PresetColors.RegisterPresetColor("ltGoldenrodYellow", Color.FromArgb(byte.MaxValue, 250, 250, 120));
+			PresetColors.RegisterPresetColor("ltGray", Color.FromArgb(byte.MaxValue, 211, 211, 211));
+			PresetColors.RegisterPresetColor("ltGreen", Color.FromArgb(byte.MaxValue, 144, 238, 144));
+			PresetColors.RegisterPresetColor("ltPink", Color.FromArgb(byte.MaxValue, byte.MaxValue, 182, 193));
+			PresetColors.RegisterPresetColor("ltSalmon", Color.FromArgb(byte.MaxValue, byte.MaxValue, 160, 122));
+			PresetColors.RegisterPresetColor("ltSeaGreen", Color.FromArgb(byte.MaxValue, 32, 178, 170));
+			PresetColors.RegisterPresetColor("ltSkyBlue", Color.FromArgb(byte.MaxValue, 135, 206, 250));
+			PresetColors.RegisterPresetColor("ltSlateGray", Color.FromArgb(byte.MaxValue, 119, 136, 153));
+			PresetColors.RegisterPresetColor("ltSteelBlue", Color.FromArgb(byte.MaxValue, 176, 196, 222));
+			PresetColors.RegisterPresetColor("ltYellow", Color.FromArgb(byte.MaxValue, byte.MaxValue, byte.MaxValue, 224));
+			PresetColors.RegisterPresetColor("magenta", Color.FromArgb(byte.MaxValue, byte.MaxValue, 0, byte.MaxValue));
+			PresetColors.RegisterPresetColor("maroon", Color.FromArgb(byte.MaxValue, 128, 0, 0));
+			PresetColors.RegisterPresetColor("medAquamarine", Color.FromArgb(byte.MaxValue, 102, 205, 170));
+			PresetColors.RegisterPresetColor("medBlue", Color.FromArgb(byte.MaxValue, 0, 0, 205));
+			PresetColors.RegisterPresetColor("medOrchid", Color.FromArgb(byte.MaxValue, 186, 85, 211));
+			PresetColors.RegisterPresetColor("medPurple", Color.FromArgb(byte.MaxValue, 147, 112, 219));
+			PresetColors.RegisterPresetColor("medSeaGreen", Color.FromArgb(byte.MaxValue, 60, 179, 113));
+			PresetColors.RegisterPresetColor("medSlateBlue", Color.FromArgb(byte.MaxValue, 123, 104, 238));
+			PresetColors.RegisterPresetColor("medSpringGreen", Color.FromArgb(byte.MaxValue, 0, 250, 154));
+			PresetColors.RegisterPresetColor("medTurquoise", Color.FromArgb(byte.MaxValue, 72, 209, 204));
+			PresetColors.RegisterPresetColor("medVioletRed", Color.FromArgb(byte.MaxValue, 199, 21, 133));
+			PresetColors.RegisterPresetColor("midnightBlue", Color.FromArgb(byte.MaxValue, 25, 25, 112));
+			PresetColors.RegisterPresetColor("mintCream", Color.FromArgb(byte.MaxValue, 245, byte.MaxValue, 250));
+			PresetColors.RegisterPresetColor("mistyRose", Color.FromArgb(byte.MaxValue, byte.MaxValue, 228, 225));
+			PresetColors.RegisterPresetColor("moccasin", Color.FromArgb(byte.MaxValue, byte.MaxValue, 228, 181));
+			PresetColors.RegisterPresetColor("navajoWhite", Color.FromArgb(byte.MaxValue, byte.MaxValue, 222, 173));
+			PresetColors.RegisterPresetColor("navy", Color.FromArgb(byte.MaxValue, 0, 0, 128));
+			PresetColors.RegisterPresetColor("oldLace", Color.FromArgb(byte.MaxValue, 253, 245, 230));
+			PresetColors.RegisterPresetColor("olive", Color.FromArgb(byte.MaxValue, 128, 128, 0));
+			PresetColors.RegisterPresetColor("oliveDrab", Color.FromArgb(byte.MaxValue, 107, 142, 35));
+			PresetColors.RegisterPresetColor("orange", Color.FromArgb(byte.MaxValue, byte.MaxValue, 165, 0));
+			PresetColors.RegisterPresetColor("orangeRed", Color.FromArgb(byte.MaxValue, byte.MaxValue, 69, 0));
+			PresetColors.RegisterPresetColor("orchid", Color.FromArgb(byte.MaxValue, 218, 112, 214));
+			PresetColors.RegisterPresetColor("paleGoldenrod", Color.FromArgb(byte.MaxValue, 238, 232, 170));
+			PresetColors.RegisterPresetColor("paleGreen", Color.FromArgb(byte.MaxValue, 152, 251, 152));
+			PresetColors.RegisterPresetColor("paleTurquoise", Color.FromArgb(byte.MaxValue, 175, 238, 238));
+			PresetColors.RegisterPresetColor("paleVioletRed", Color.FromArgb(byte.MaxValue, 219, 112, 147));
+			PresetColors.RegisterPresetColor("papayaWhip", Color.FromArgb(byte.MaxValue, byte.MaxValue, 239, 213));
+			PresetColors.RegisterPresetColor("peachPuff", Color.FromArgb(byte.MaxValue, byte.MaxValue, 218, 185));
+			PresetColors.RegisterPresetColor("peru", Color.FromArgb(byte.MaxValue, 205, 133, 63));
+			PresetColors.RegisterPresetColor("pink", Color.FromArgb(byte.MaxValue, byte.MaxValue, 192, 203));
+			PresetColors.RegisterPresetColor("plum", Color.FromArgb(byte.MaxValue, 221, 160, 221));
+			PresetColors.RegisterPresetColor("powderBlue", Color.FromArgb(byte.MaxValue, 176, 224, 230));
+			PresetColors.RegisterPresetColor("purple", Color.FromArgb(byte.MaxValue, 128, 0, 128));
+			PresetColors.RegisterPresetColor("red", Color.FromArgb(byte.MaxValue, byte.MaxValue, 0, 0));
+			PresetColors.RegisterPresetColor("rosyBrown", Color.FromArgb(byte.MaxValue, 188, 143, 143));
+			PresetColors.RegisterPresetColor("royalBlue", Color.FromArgb(byte.MaxValue, 65, 105, 225));
+			PresetColors.RegisterPresetColor("saddleBrown", Color.FromArgb(byte.MaxValue, 139, 69, 19));
+			PresetColors.RegisterPresetColor("salmon", Color.FromArgb(byte.MaxValue, 250, 128, 114));
+			PresetColors.RegisterPresetColor("sandyBrown", Color.FromArgb(byte.MaxValue, 244, 164, 96));
+			PresetColors.RegisterPresetColor("seaGreen", Color.FromArgb(byte.MaxValue, 46, 139, 87));
+			PresetColors.RegisterPresetColor("seaShell", Color.FromArgb(byte.MaxValue, byte.MaxValue, 245, 238));
+			PresetColors.RegisterPresetColor("sienna", Color.FromArgb(byte.MaxValue, 160, 82, 45));
+			PresetColors.RegisterPresetColor("silver", Color.FromArgb(byte.MaxValue, 192, 192, 192));
+			PresetColors.RegisterPresetColor("skyBlue", Color.FromArgb(byte.MaxValue, 135, 206, 235));
+			PresetColors.RegisterPresetColor("slateBlue", Color.FromArgb(byte.MaxValue, 106, 90, 205));
+			PresetColors.RegisterPresetColor("slateGray", Color.FromArgb(byte.MaxValue, 112, 128, 144));
+			PresetColors.RegisterPresetColor("snow", Color.FromArgb(byte.MaxValue, byte.MaxValue, 250, 250));
+			PresetColors.RegisterPresetColor("springGreen", Color.FromArgb(byte.MaxValue, 0, byte.MaxValue, 127));
+			PresetColors.RegisterPresetColor("steelBlue", Color.FromArgb(byte.MaxValue, 70, 130, 180));
+			PresetColors.RegisterPresetColor("tan", Color.FromArgb(byte.MaxValue, 210, 180, 140));
+			PresetColors.RegisterPresetColor("teal", Color.FromArgb(byte.MaxValue, 0, 128, 128));
+			PresetColors.RegisterPresetColor("thistle", Color.FromArgb(byte.MaxValue, 216, 191, 216));
+			PresetColors.RegisterPresetColor("tomato", Color.FromArgb(byte.MaxValue, byte.MaxValue, 99, 71));
+			PresetColors.RegisterPresetColor("turquoise", Color.FromArgb(byte.MaxValue, 64, 224, 208));
+			PresetColors.RegisterPresetColor("violet", Color.FromArgb(byte.MaxValue, 238, 130, 238));
+			PresetColors.RegisterPresetColor("wheat", Color.FromArgb(byte.MaxValue, 245, 222, 179));
+			PresetColors.RegisterPresetColor("white", Color.FromArgb(byte.MaxValue, byte.MaxValue, byte.MaxValue, byte.MaxValue));
+			PresetColors.RegisterPresetColor("whiteSmoke", Color.FromArgb(byte.MaxValue, 245, 245, 245));
+			PresetColors.RegisterPresetColor("yellow", Color.FromArgb(byte.MaxValue, byte.MaxValue, byte.MaxValue, 0));
+			PresetColors.RegisterPresetColor("yellowGreen", Color.FromArgb(byte.MaxValue, 154, 205, 50));
+		}
+
+		static void RegisterPresetColor(string name, Color color)
+		{
+			PresetColors.presetColors[name] = color;
+		}
+
+		static readonly Dictionary<string, Color> presetColors = new Dictionary<string, Color>();
+	}
+}

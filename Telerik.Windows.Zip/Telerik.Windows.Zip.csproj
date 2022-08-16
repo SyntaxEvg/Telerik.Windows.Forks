@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E4A701F-044F-400B-8BB2-0C88D0AF58AF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Telerik.Windows.Zip</RootNamespace>
+    <AssemblyName>Telerik.Windows.Zip</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adler32.cs" />
+    <Compile Include="AesEncryptionExtraField.cs" />
+    <Compile Include="BlockTransformBase.cs" />
+    <Compile Include="CentralDirectoryHeader.cs" />
+    <Compile Include="CentralDirectoryHeaderInfo.cs" />
+    <Compile Include="CompressedStream.cs" />
+    <Compile Include="CompressedStreamHeader.cs" />
+    <Compile Include="CompressionLevel.cs" />
+    <Compile Include="CompressionMethod.cs" />
+    <Compile Include="CompressionSettings.cs" />
+    <Compile Include="CompressionTransformBase.cs" />
+    <Compile Include="CompressionType.cs" />
+    <Compile Include="Crc32.cs" />
+    <Compile Include="CryptoStream.cs" />
+    <Compile Include="DataDescriptor.cs" />
+    <Compile Include="DataDescriptorBase.cs" />
+    <Compile Include="DefaultCryptoProvider.cs" />
+    <Compile Include="DefaultCryptoTransformBase.cs" />
+    <Compile Include="DefaultDecryptor.cs" />
+    <Compile Include="DefaultEncryptionSettings.cs" />
+    <Compile Include="DefaultEncryptor.cs" />
+    <Compile Include="DefaultPlatformManager.cs" />
+    <Compile Include="DeflateAlgorithm.cs" />
+    <Compile Include="DeflateBlockState.cs" />
+    <Compile Include="DeflateCompressor.cs" />
+    <Compile Include="DeflateConfiguration.cs" />
+    <Compile Include="DeflateConstants.cs" />
+    <Compile Include="DeflateDecompressor.cs" />
+    <Compile Include="DeflateSettings.cs" />
+    <Compile Include="DeflateTransformBase.cs" />
+    <Compile Include="DeflatingFlags.cs" />
+    <Compile Include="EncryptionAlgorithmType.cs" />
+    <Compile Include="EncryptionSettings.cs" />
+    <Compile Include="EndOfCentralDirectoryRecord.cs" />
+    <Compile Include="ExtraFieldBase.cs" />
+    <Compile Include="ExtraFieldType.cs" />
+    <Compile Include="FileHeaderBase.cs" />
+    <Compile Include="FileHeaderInfoBase.cs" />
+    <Compile Include="GeneralPurposeBitFlag.cs" />
+    <Compile Include="IBlockTransform.cs" />
+    <Compile Include="IChecksumAlgorithm.cs" />
+    <Compile Include="ICompressionAlgorithm.cs" />
+    <Compile Include="ICryptoProvider.cs" />
+    <Compile Include="ImplodingFlags.cs" />
+    <Compile Include="InflateTree.cs" />
+    <Compile Include="InputBitsBuffer.cs" />
+    <Compile Include="InvalidDataException.cs" />
+    <Compile Include="IPlatformManager.cs" />
+    <Compile Include="ISpecData.cs" />
+    <Compile Include="LocalFileHeader.cs" />
+    <Compile Include="LocalFileHeaderInfo.cs" />
+    <Compile Include="LzmaAlgorithm.cs" />
+    <Compile Include="LzmaBinaryTree.cs" />
+    <Compile Include="LzmaBitTreeDecoder.cs" />
+    <Compile Include="LzmaBitTreeEncoder.cs" />
+    <Compile Include="LzmaCompressor.cs" />
+    <Compile Include="LzmaDecompressor.cs" />
+    <Compile Include="LZMAFlags.cs" />
+    <Compile Include="LzmaLengthDecoder.cs" />
+    <Compile Include="LzmaLengthEncoder.cs" />
+    <Compile Include="LzmaLengthTableEncoder.cs" />
+    <Compile Include="LzmaLiteralDecoder.cs" />
+    <Compile Include="LzmaLiteralEncoder.cs" />
+    <Compile Include="LzmaMatchFinderType.cs" />
+    <Compile Include="LzmaOptimizationData.cs" />
+    <Compile Include="LzmaOutputWindow.cs" />
+    <Compile Include="LzmaRangeBitDecoder.cs" />
+    <Compile Include="LzmaRangeBitEncoder.cs" />
+    <Compile Include="LzmaRangeDecoder.cs" />
+    <Compile Include="LzmaRangeEncoder.cs" />
+    <Compile Include="LzmaSettings.cs" />
+    <Compile Include="LzmaState.cs" />
+    <Compile Include="LzmaTransformBase.cs" />
+    <Compile Include="OperationStream.cs" />
+    <Compile Include="OutputWindow.cs" />
+    <Compile Include="PlatformSettings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaticTree.cs" />
+    <Compile Include="StoreAlgorithm.cs" />
+    <Compile Include="StoreCompressor.cs" />
+    <Compile Include="StoreDecompressor.cs" />
+    <Compile Include="StoreSettings.cs" />
+    <Compile Include="StoreTransformBase.cs" />
+    <Compile Include="StreamOperationMode.cs" />
+    <Compile Include="StrongEncryptionExtraField.cs" />
+    <Compile Include="TransformationHeader.cs" />
+    <Compile Include="Tree.cs" />
+    <Compile Include="UnknownExtraField.cs" />
+    <Compile Include="VersionNeededToExtract.cs" />
+    <Compile Include="Zip64DataDescriptor.cs" />
+    <Compile Include="Zip64DataDescriptorBase.cs" />
+    <Compile Include="Zip64EndOfCentralDirectoryLocator.cs" />
+    <Compile Include="Zip64EndOfCentralDirectoryRecord.cs" />
+    <Compile Include="Zip64ExtraField.cs" />
+    <Compile Include="ZipArchive.cs" />
+    <Compile Include="ZipArchiveEntry.cs" />
+    <Compile Include="ZipArchiveMode.cs" />
+    <Compile Include="ZipCompression.cs" />
+    <Compile Include="ZipHelper.cs" />
+    <Compile Include="ZipInputStream.cs" />
+    <Compile Include="ZipOutputStream.cs" />
+    <Compile Include="ZipPackage.cs" />
+    <Compile Include="ZipPackageEntry.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
